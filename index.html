@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Prueba</title>
+</head>
+<body>
+	<section id="app">
+		<div class="card">
+			<img src="https://vapor-us-east-1-dev-uploads-1603425924.s3.amazonaws.com/sample/38ad373043fa1f63acc570b62e22cc7f-paisaje-natural.jpg" alt="">
+			<div class="image">
+				<img src="img/foto mia.jpeg">
+			</div>
+			<h4>{{name}}</h4>
+		</div>
+		<div class="info">
+			<h2>{{skill}}</h5>
+					<p>Skills:</p>
+				<div id="skill">
+					<ul v-for="p in skills">
+						<li >{{p}}</li>
+					</ul>
+				</div>
+		</div>
+	</section>
+
+	<!-- scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
